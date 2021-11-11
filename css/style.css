@@ -1,0 +1,393 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial;
+}
+
+/*          PARTE DO HEADER          */
+
+header {
+    display: flex;
+    justify-content: center;
+    height: 120px;
+}
+.container {
+    display: flex;
+    justify-content: space-between;
+    width: 990px;
+}
+.logo {
+    display: flex;
+    align-items: center;
+}
+/* MENU */
+.menu {
+    display: flex;
+    align-items: center;
+}
+nav ul, nav li {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+nav ul {
+    display: flex;
+}
+nav a {
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #727272;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.ativar, 
+nav a:hover {
+    background-color: #51a3dd;
+    color: white;
+}
+
+/*          PARTE DO BANNER          */
+
+.banner {
+    display: flex;
+    justify-content: center;
+    background-image:url(../images/banner.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 670px;
+}
+.column {
+    flex-direction: column;
+}
+.banner_texto {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.banner_texto h1 {
+    color: white;
+    font-size: 70px;
+    text-shadow: 0px 1px 0px #555;
+    max-width: 450px;
+}
+.banner_texto h2 {
+    color: rgb(0, 102, 255);
+    font-size: 20px;
+    max-width: 350px;
+    margin-top: 10px;
+}
+.banner_opcoes {
+    height: 210px;
+    display: flex;
+}
+.banner1, .banner2, .banner3 {
+    flex: 1;
+    color: white;
+    padding: 20px;
+}
+.banner1 {
+    background-color: #39aae1;
+}
+.banner2 {
+    background-color: #0079c7;
+}
+.banner3 {
+    background-color: #2b4c99;
+}
+.banner_titulo {
+    font-size: 21px;
+    text-shadow: 0px 1px 0px #555;
+}
+.banner_descricao {
+    font-size: 13px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.banner_opcoes a {
+    display: inline-block;
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 5px;
+    color: white;
+    font-size: 14px;
+    text-decoration: none;
+}
+.banner_opcoes a:hover {
+    background: white;
+    color: #0079c7;
+}
+.banner2 a {
+    margin-top: 30px;
+}
+.poder1{
+    margin-bottom: 15px;
+    margin-top: 10px;
+    padding-bottom: 5px;
+    font-size: 13px;
+}
+.poder3 {
+    margin-bottom: 21px;
+}
+/* PARTE DO CONTEUDO GERAL */
+
+#geral {
+    display: flex;
+    justify-content: center;
+}
+#geral section {
+    flex: 2;
+}
+#geral aside {
+    flex: 1;
+}
+.conteudo_titulo {
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+.conteudo_titulo_texto {
+    color: black;                           /* Estilizando os titulos das áreas com barras azuis embaixo*/
+    font-size: 21px;
+    font-weight: bold;
+}
+.conteudo_titulo_texto_barra {
+    width: 50px;
+    height: 3px;
+    background: #36a9e1;
+    margin-top: 10px;
+}
+
+/* PARTE DAS SAGAS DENTRO DO CONTEUDO GERAL */
+
+.flex {
+    display: flex;  /* Usado para deixar os artigos da saga todos em linha e não em coluna*/
+    flex-wrap: wrap; /*Quebrar a linha nos artigos*/
+}
+article {
+    flex: 1;
+    min-width: 300px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+article a {
+    text-decoration: none;
+}
+article .saga-data {
+    display: flex;
+}
+article .saga-exibi {
+    background-color: #2b4c99;
+    color: white;
+    font-size: 11;
+    padding: 10px;
+    margin-right: 3px;
+}
+article .saga-exibi-ano {
+    background-color: #39aae1;
+    color: white;
+    font-size: 11;
+    padding: 10px;
+}
+article .saga-thumbnail{
+    margin-top: 30px;
+}
+article .saga-thumbnail img{
+    width: 100%;
+    height: auto;
+}
+article .saga-titulo {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    font-size: 23px;
+    color: black;
+    font-weight: bold;
+}
+article .saga-resumo {
+    font-size: 13px;
+    color: #5c5c5c;
+    line-height: 18px;
+
+}
+
+/* PARTE DO ASIDE */
+.conteudo_aside {
+    width: 100%;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.aside-box {
+    height: 150px;
+    margin-bottom: 30px;
+    margin-right: 25px;
+    min-width: 140px;
+    background-color: #02a3dd;
+}
+/* Segunda parte do aside - HAKIS */
+.conteudo_aside2 {
+    width: 100%;
+    height: 40vh;
+}
+.text-aside {
+    font-size: 14px;
+}
+.haki {
+    padding: 10px;
+    margin-top: 10px;
+    border-bottom: 2px solid darkgrey;
+}
+.haki a {
+    text-decoration: none;
+    color: black;
+}
+
+/* ÁREA DO FOOTER */
+
+footer {
+    background-color: #1e1e1e;
+    display: flex;
+    justify-content: center;
+}
+
+/* FOOTER COLORIDO */
+.footer_menu {
+    display: flex;
+    color: white;
+}
+.footer_menu a {
+    text-decoration: none;
+    color: white;
+}
+.fm_1, .fm_2, .fm_3 {
+    flex: 1;
+    padding: 20px;
+}
+.fm_1 {
+    background-color: #39aae1;
+}
+.fm_2 {
+    background-color: #0079c7;
+}
+.fm_3 {
+    background-color: #2b4c99;
+}
+.fm_title {
+    font-size: 21px;
+    text-shadow: 0px 1px 0px #555;
+}
+.fm_description {
+    font-size: 13px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* ÁREA DO FOOTER DE BAIXO PRETA */
+
+.flexColumn {
+    flex-direction: column;    /* CLASS CRIADA PARA DEIXAR OS 2 MENUS UM ABAIXO DO OUTRO*/ 
+    
+}
+.footer_area {
+    display: flex;
+}
+
+.footer_area_item {
+    flex: 1;
+    color: white;
+}
+footer .conteudo_titulo_texto {
+    color: white;
+}
+.footer_direitos {
+    border-top: 1px solid #2c2c2c;
+    color: #5c5c5c;
+    font-size: 13px;
+    height: 40px;
+    line-height: 40px;
+    margin-top: 30px;
+}
+.font-white {
+    color: white;
+}
+
+/* Menu responsivo */
+.menu-mobile {
+    display: none;
+    width: 40px;
+    height: 40px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin-right: 20px;
+}
+.menu-linha {
+    height: 3px;
+    background: #39aae1;
+}
+
+/* DEIXANDO RESPONSIVO */
+
+/* Trabalhando no banner */
+@media (max-width: 800px) {
+    .banner_texto {
+        padding: 20px;
+        margin-bottom: 50px;
+    }
+    .banner_texto h1 {
+        font-size: 40px;
+    }
+    .banner_texto h2 {
+        font-size: 15px;
+    }
+    .banner_opcoes {
+        height: auto;
+        flex-direction: column;
+    }   
+    .container {
+        flex-direction: column;
+    }
+    #geral section,
+    #geral aside {
+        padding: 20px;
+    }
+    .conteudo_titulo_texto {
+        margin-bottom: 30px;
+    }
+    .conteudo_titulo {
+        margin-top: 150px;
+    }
+    .footer_menu{
+        flex-direction: column;
+    }
+    .footer_area {
+        flex-direction: column;
+        padding: 20px;
+    }
+    .footer_direitos {
+        padding-left: 20px;
+    }
+    
+    header .container {
+        flex-direction: row;
+    }
+    nav ul {
+        flex-direction: column;
+        display: none;
+        position: absolute;
+        left: 0;
+        width: 100%;
+        background-color: white;
+    }
+    header {
+     height: auto;   
+    }
+    .logo {
+        padding-left: 20px;
+    }
+    .menu-mobile {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+}
